@@ -13,7 +13,6 @@ from reportlab.lib import colors
 app = FastAPI(title="SnapReport MVP Pipeline")
 
 # --- Enterprise Configuration Keys ---
-# Paste your actual OpenAI key here if available, or set it via terminal env vars.
 OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY", "YOUR_ACTUAL_OPENAI_KEY_HERE")
 
 # Initialize OpenAI Client Gateway
@@ -184,7 +183,6 @@ async def generate_market_report(request: ReportRequest):
         story.append(divider)
         story.append(Spacer(1, 10))
 
-        # --- NEW PRODUCT FEATURE: THE "TRAFFIC LIGHT" MARKET ACTION BADGE ---
         # 1. Evaluate the velocity to determine the signal
         dom_value = int(stats['days_on_market'])
         

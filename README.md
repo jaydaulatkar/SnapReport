@@ -28,7 +28,7 @@ Multivariate Forecasting: Upgrading the algorithm to account for complex real es
 
 This will upgrade the predictive block from a linear visualizer into an institutional-grade algorithmic forecast, offering clients unparalleled predictive equity insights.
 
-Installation & Deployment
+Installation & Deployment:-
 1. Clone & Install Dependencies
 Ensure you have Python 3.9+ installed.
 
